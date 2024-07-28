@@ -1,66 +1,16 @@
-## Foundry
+# SUniswapV2, a clone of UniswapV2 made in educational purposes
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Using this repo
 
-Foundry consists of:
+1. `git clone git@github.com:MagicalBridge/s-uniswapv2.git`
+2. Ensure you have installed Rust and Cargo: [Install Rust](https://www.rust-lang.org/tools/install)
+3. Install Foundry:
+   `cargo install --git https://github.com/gakonst/foundry --bin forge --locked`
+4. Install dependency contracts:
+   `git submodule update --init --recursive`
+5. Run tests:
+   `forge test`
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Blog posts
 
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+1. [Part 1](https://learnblockchain.cn/article/8864), architecture of UniswapV2, adding liquidity, first tests in Solidity, removing liquidity.
